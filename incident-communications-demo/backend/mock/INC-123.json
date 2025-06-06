@@ -1,0 +1,38 @@
+{
+  "incident_id": "INC-123",
+  "title": "Database Connection Timeout",
+  "impact": "Users unable to access their dashboards and reporting features",
+  "severity": "high",
+  "status": "investigating",
+  "affected_services": [
+    "User Dashboard",
+    "Reporting API",
+    "Analytics Service"
+  ],
+  "start_time": "2024-01-15T14:30:00Z",
+  "detected_by": "Monitoring Alert",
+  "description": "Multiple users are reporting timeouts when accessing their dashboards. Our monitoring systems detected increased response times on the primary database cluster db-prod-01.abnormal.com. The issue appears to be related to connection pool exhaustion.",
+  "technical_details": {
+    "affected_hosts": [
+      "web-server-01.internal.local",
+      "api-gateway-02.abnormal.com"
+    ],
+    "error_rate": "85%",
+    "affected_regions": ["us-east-1", "eu-west-1"],
+    "contact_info": "For urgent issues, contact ops-team@abnormal.com or call 555-123-4567"
+  },
+  "timeline": [
+    {
+      "time": "2024-01-15T14:30:00Z",
+      "event": "First reports of dashboard timeouts"
+    },
+    {
+      "time": "2024-01-15T14:32:00Z", 
+      "event": "Monitoring alerts triggered for database response time"
+    },
+    {
+      "time": "2024-01-15T14:35:00Z",
+      "event": "Incident declared, engineering team notified"
+    }
+  ]
+} 

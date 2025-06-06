@@ -1,0 +1,35 @@
+{
+  "incident_id": "INC-789",
+  "title": "CDN Performance Degradation",
+  "impact": "Slower page load times for some users",
+  "severity": "medium",
+  "status": "resolved",
+  "affected_services": [
+    "Content Delivery Network",
+    "Static Assets",
+    "Image Loading"
+  ],
+  "start_time": "2024-01-15T16:45:00Z",
+  "end_time": "2024-01-15T18:30:00Z",
+  "detected_by": "Performance Monitoring",
+  "description": "We detected increased latency in our CDN serving static content. This resulted in slower page load times for users in certain geographic regions. The issue has been resolved and performance is back to normal.",
+  "technical_details": {
+    "affected_regions": ["us-west-2", "eu-central-1"],
+    "performance_impact": "25% increase in load times",
+    "root_cause": "CDN provider maintenance window"
+  },
+  "timeline": [
+    {
+      "time": "2024-01-15T16:45:00Z",
+      "event": "Performance degradation detected"
+    },
+    {
+      "time": "2024-01-15T17:00:00Z",
+      "event": "CDN provider contacted, maintenance confirmed"
+    },
+    {
+      "time": "2024-01-15T18:30:00Z",
+      "event": "Performance restored to normal levels"
+    }
+  ]
+} 

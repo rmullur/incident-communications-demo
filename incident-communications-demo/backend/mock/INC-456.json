@@ -1,0 +1,38 @@
+{
+  "incident_id": "INC-456",
+  "title": "Authentication Service Outage",
+  "impact": "Users unable to log in to their accounts",
+  "severity": "critical",
+  "status": "investigating",
+  "affected_services": [
+    "User Authentication",
+    "SSO Portal",
+    "Mobile App Login"
+  ],
+  "start_time": "2024-01-16T09:15:00Z",
+  "detected_by": "User Reports",
+  "description": "We are experiencing a complete outage of our authentication service. Users are unable to log in through our web portal, mobile app, or SSO integrations. Our engineering team is investigating the root cause.",
+  "technical_details": {
+    "affected_hosts": [
+      "auth-service-01.production.com",
+      "auth-service-02.production.com"
+    ],
+    "error_rate": "100%",
+    "affected_regions": ["global"],
+    "contact_info": "Emergency escalation: 555-999-0000"
+  },
+  "timeline": [
+    {
+      "time": "2024-01-16T09:15:00Z",
+      "event": "First user reports of login failures"
+    },
+    {
+      "time": "2024-01-16T09:17:00Z",
+      "event": "Monitoring confirms authentication service unavailable"
+    },
+    {
+      "time": "2024-01-16T09:20:00Z",
+      "event": "Critical incident declared, all hands on deck"
+    }
+  ]
+} 
