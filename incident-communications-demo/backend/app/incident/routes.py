@@ -108,7 +108,7 @@ def redact_sensitive_info(text):
     redacted_text, leaks = redactor.process_text(text)
     return redacted_text, leaks
 
-@incident_bp.route('/api/draft', methods=['POST'])
+@incident_bp.route('/draft', methods=['POST'])
 def generate_draft():
     """Generate a status update draft for an incident"""
     try:
